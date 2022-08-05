@@ -1,2 +1,8 @@
 # pratice-gameDemo
-a game demo, client by unity, server by libuv
+#### client: unity
+#### server: c++ libuv
+#### protocol: protobuf
+#### server implement function:
+- shop
+- bag
+- player move sync
