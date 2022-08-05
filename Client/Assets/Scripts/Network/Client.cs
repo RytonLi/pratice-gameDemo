@@ -21,6 +21,7 @@ public class Client : MonoBehaviour
         {(int)SERVER_CMD.ServerBuyRsp,typeof(PlayerBuyRsp)},
         {(int)SERVER_CMD.ServerBagupdateRsp,typeof(PlayerBagUpdateRsp)},
         {(int)SERVER_CMD.ServerMoneyRsp,typeof(PlayerMoneyRsp)},
+        {(int)SERVER_CMD.ServerStatusRsp,typeof(PlayerStatusRsp)},
     };
     
     public struct NetMsg

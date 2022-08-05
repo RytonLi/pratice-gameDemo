@@ -34,6 +34,7 @@ public class Register : MonoBehaviour
         m_Login.SetActive(false);
 
         MyEventSystem.Instance.SendEvent("EnablePlayerMove");
+        MyEventSystem.Instance.SendEvent("SetPlayerPosition");
     }
 
     public InputField Id;

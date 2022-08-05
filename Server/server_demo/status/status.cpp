@@ -65,12 +65,12 @@ bool StatusMgr::on_status_req(uv_tcp_t* client, PlayerStatusReq* req) {
 	status->IsWalking = req->iswalking();
 
 	rsp.set_result(0);
-	rsp.set_reason(convertToUTF8("玩家状态同步成功...");
+	rsp.set_reason(convertToUTF8("玩家状态同步成功..."));
 
 Exit0:
-	fprintf(stdout, "--------------finish handle create: %d\n", rsp.result());
+	//fprintf(stdout, "--------------finish handle create: %d\n", rsp.result());
 	//应答结果
-	len = encode(s_send_buff, SERVER_CREATE_RSP, rsp.SerializeAsString().c_str(), rsp.ByteSize());
+	len = encode(s_send_buff, SERVER_STATUS_RSP, rsp.SerializeAsString().c_str(), rsp.ByteSize());
 	sendData((uv_stream_t*)client, s_send_buff, len);
 	return true;
 }

@@ -82,8 +82,8 @@ namespace TCCamp {
             "RVJfQ1JFQVRFX1JTUBDtBxIYChNTRVJWRVJfQU5OT1VOQ0VfUlNQEO4HEhwK",
             "F1NFUlZFUl9TSE9QQ09NUExFVEVfUkVREO8HEhoKFVNFUlZFUl9TSE9QVVBE",
             "QVRFX1JFURDwBxITCg5TRVJWRVJfQlVZX1JTUBDxBxIZChRTRVJWRVJfQkFH",
-            "VVBEQVRFX1JTUBDyBxIVChBTRVJWRVJfTU9ORVlfUlNQEPMHEhYKEUNMSUVO",
-            "VF9TVEFUVVNfUlNQEPQHEhMKDkdNX09QRVJBVEVfUlNQEMwIEhMKDlNFUlZF",
+            "VVBEQVRFX1JTUBDyBxIVChBTRVJWRVJfTU9ORVlfUlNQEPMHEhYKEVNFUlZF",
+            "Ul9TVEFUVVNfUlNQEPQHEhMKDkdNX09QRVJBVEVfUlNQEMwIEhMKDlNFUlZF",
             "Ul9DTURfRU5EEJBOKkEKD0lURU1fVVBEQVRFX0NNRBIMCghJVEVNX0FERBAA",
             "Eg8KC0lURU1fREVMRVRFEAESDwoLSVRFTV9NT0RJRlkQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -150,7 +150,7 @@ namespace TCCamp {
     [pbr::OriginalName("SERVER_BUY_RSP")] ServerBuyRsp = 1009,
     [pbr::OriginalName("SERVER_BAGUPDATE_RSP")] ServerBagupdateRsp = 1010,
     [pbr::OriginalName("SERVER_MONEY_RSP")] ServerMoneyRsp = 1011,
-    [pbr::OriginalName("CLIENT_STATUS_RSP")] ClientStatusRsp = 1012,
+    [pbr::OriginalName("SERVER_STATUS_RSP")] ServerStatusRsp = 1012,
     [pbr::OriginalName("GM_OPERATE_RSP")] GmOperateRsp = 1100,
     [pbr::OriginalName("SERVER_CMD_END")] End = 10000,
   }

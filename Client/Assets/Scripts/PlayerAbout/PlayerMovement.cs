@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 m_Movement;     //移动向量
     private Quaternion m_Rotation = Quaternion.identity;//旋转四元数
     private bool m_IsEnable = false;
+    bool m_IsWalking;
 
     private TimerManager m_Timer;
 
@@ -35,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
         MyEventSystem.Instance.AddListener("EnablePlayerMove", EnablePlayerMove);
         MyEventSystem.Instance.AddListener("SetPlayerPosition", SetPlayerPosition);
         MyEventSystem.Instance.AddListener("ResetPosition", ResetPosition);
+
+        EventModule.Instance.AddNetEvent(((int)SERVER_CMD.ServerStatusRsp), OnStatusRsp);
     }
 
    private void SetPlayerPosition()
@@ -64,12 +67,12 @@ public class PlayerMovement : MonoBehaviour
             //根据输入判断是否在行走
             bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);//是否有水平输入（根据输入是否等于0）
             bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);    //是否有竖直输入（根据输入是否等于0）
-            bool isWalking = hasHorizontalInput || hasVerticalInput;       //如果有水平或者竖直输入，则判断为在行走。"||"或。
+            m_IsWalking = hasHorizontalInput || hasVerticalInput;       //如果有水平或者竖直输入，则判断为在行走。"||"或。
 
             //设置动画参数
-            m_Animator.SetBool("IsWalking", isWalking);
+            m_Animator.SetBool("IsWalking", m_IsWalking);
 
-            if (isWalking)
+            if (m_IsWalking)
             {
                 MyEventSystem.Instance.SendEvent("PlayFootstep");
             }
@@ -85,6 +88,31 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        if (m_IsEnable)
+        {
+            PlayerStatusReq req = new PlayerStatusReq();
+            req.PlayerID = PlayerInfo.Instance.Id;
+            req.PositionX = m_Rigidbody.position.x;
+            req.PositionY = m_Rigidbody.position.z;
+            req.Rotation = m_Rigidbody.rotation.eulerAngles.y;
+            req.IsWalking = m_IsWalking;
+            //发送角色状态信息
+            m_Client.SendMsg(((int)CLIENT_CMD.ClientStatusReq), req);
+        }
+    }
+
+    private void OnStatusRsp(int cmd, IMessage msg)
+    {
+        PlayerStatusRsp rsp = (PlayerStatusRsp)msg;
+        
+        if(rsp.Result != 0)
+        {
+            string str = "返回：" + rsp.Result + ", " + rsp.Reason;
+            m_Board.AddMessage(str);
+        }
+    }
 
     //当播放动画的时候，调用Rigidbody(刚体)控制角色运动
     private void OnAnimatorMove()
