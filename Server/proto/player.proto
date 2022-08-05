@@ -1,0 +1,214 @@
+syntax = "proto3";
+
+package TCCamp;
+
+enum CLIENT_CMD {
+    CLIENT_CMD_INVALID = 0;
+    CLIENT_CMD_BEGIN = 30000;
+
+    CLIENT_PING = 30001;
+
+    CLIENT_ADD_REQ = 30003;
+
+	CLIENT_LOGIN_REQ = 30004;
+	CLIENT_CREATE_REQ = 30005;
+	CLIENT_ANNOUNCE_REQ = 30006;
+
+	CLIENT_SHOPCOMPLETE_RSP = 30007;
+	CLIENT_SHOPUPDATE_RSP = 30008;
+
+	CLIENT_BUY_REQ = 30009;
+
+	CLIENT_BAGUPDATE_REQ = 30010;
+
+	CLIENT_MONEY_REQ = 30011;
+
+	CLIENT_STATUS_REQ = 30012;
+
+    CLIENT_CMD_END = 33000;
+}
+
+enum SERVER_CMD {
+    SERVER_CMD_INVALID = 0;
+    SERVER_CMD_BEGIN = 1000;
+
+    SERVER_PONG = 1001;
+    SERVER_ADD_RSP = 1003;
+
+	SERVER_LOGIN_RSP = 1004;
+	SERVER_CREATE_RSP = 1005;
+	SERVER_ANNOUNCE_RSP = 1006;
+
+	SERVER_SHOPCOMPLETE_REQ = 1007;
+	SERVER_SHOPUPDATE_REQ = 1008;
+
+	SERVER_BUY_RSP = 1009;
+
+	SERVER_BAGUPDATE_RSP = 1010;
+
+	SERVER_MONEY_RSP = 1011;
+
+	CLIENT_STATUS_RSP = 1012;
+
+	GM_OPERATE_RSP = 1100;
+
+    SERVER_CMD_END = 10000;
+}
+
+enum ITEM_UPDATE_CMD{
+	ITEM_ADD = 0;
+	ITEM_DELETE = 1;
+	ITEM_MODIFY = 2;
+}
+
+message AddReq {
+    int32 A = 1;
+    int32 B = 2;
+}
+
+message AddRsp {
+    int32 A = 1;
+    int32 B = 2;
+    int32 Result = 3;
+}
+
+message PlayerSyncData {
+	string PlayerID = 1;
+	bytes Name = 2;
+	float PositionX = 3;
+	float PositionY = 4;
+	float Rotation = 5;
+	bool IsWalking = 6;
+	int32 Money = 7;
+	repeated BagItem Items = 8;
+	map<int32, int32> BuyLimit = 9;
+}
+
+message PlayerLoginReq {
+	string PlayerID = 1;
+	string Password = 2;
+}
+
+message PlayerLoginRsp {
+	int32 Result = 1;
+	string Reason = 2;
+	PlayerSyncData PlayerData = 3;
+}
+
+message PlayerCreateReq {
+	string PlayerID = 1;
+	string Password = 2;
+	bytes Name = 3;
+}
+
+message PlayerCreateRsp {
+	int32 Result = 1;
+	string Reason = 2;
+	PlayerSyncData PlayerData = 3;
+
+}
+
+message SyncAnnounce {
+	bytes Announce = 1;
+}
+
+message BagItem{
+	int32 Id = 1;
+	int32 Num = 2;
+}
+
+message PlayerSaveData {
+	PlayerSyncData SyncData = 1;
+	string Password = 2;
+}
+
+message ShopItem{
+	int32 Id = 1;
+	bytes Name = 2;
+	bytes Introduce = 3;
+	int32 Price = 4;
+	bool IsDiscount = 5;
+	float Rate = 6;
+	bool IsSingleLimit = 7;
+	int32 SingleLimit = 8;
+	bool IsGlobalLimit = 9;
+	int32 GlobalLimit = 10;
+	bool IsTimeLimit = 11;
+	int32 LimitTime = 12;
+}
+
+message ShopCompleteReq{
+	repeated ShopItem Items = 1;
+}
+
+message ShopCompleteRsp{
+	string PlayerID = 1;
+	int32 Result = 2;
+	string Reason = 3;
+}
+
+ message ShopUpdate{
+	  int32 cmd = 1;
+	  ShopItem item = 2;
+ }
+
+message ShopUpdateReq{
+	int32 SyncNum = 1;
+	repeated ShopUpdate UpdateList = 2;
+}
+
+message ShopUpdateRsp{
+	string PlayerID = 1;
+	int32 Result = 2;
+	string Reason = 3;
+	int32 SyncNum = 4;
+}
+
+message PlayerBuyReq{
+	string PlayerID = 1;
+	int32 ItemId = 2;
+	int32 ItemNum = 3;
+}
+
+message PlayerBuyRsp{
+	int32 Result = 1;
+	string Reason = 2;
+}
+
+message PlayerBagUpdateReq{
+	string PlayerID = 1;
+}
+
+message BagUpdate{
+	int32 cmd = 1;
+	BagItem item = 2;
+}
+
+message PlayerBagUpdateRsp{
+	int32 Result = 1;
+	string Reason = 2;
+	repeated BagUpdate UpdateList = 3;
+}
+
+message PlayerMoneyReq{
+	string PlayerID = 1;
+}
+
+message PlayerMoneyRsp{
+	int32 Result = 1;
+	string Reason = 2;
+	int32 Money = 3;
+}
+
+message PlayerStatusReq{
+	string PlayerID = 1;
+	float PositionX = 2;
+	float PositionY = 3;
+	float Rotation = 4;
+	bool IsWalking = 5;
+}
+
+message PlayerStatusRsp{
+	int32 Result = 1;
+	string Reason = 2;
+}

@@ -1,0 +1,316 @@
+The system is: Windows - 10.0.19041 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2021/7/1 17:27:16。
+节点 1 上的项目“E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\3.16.0\CompilerIdC\CompilerIdC.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+  正在创建目录“Debug\CompilerIdC.tlog\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdC.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  e:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  e:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\3.16.0\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=e:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  正在删除文件“Debug\CompilerIdC.tlog\unsuccessfulbuild”。
+  正在对“Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\3.16.0\CompilerIdC\CompilerIdC.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:00.51
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/3.16.0/CompilerIdC/CompilerIdC.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_1aaa5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1aaa5.dir\Debug\\" /Fd"cmTC_1aaa5.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+  cmTC_1aaa5.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_1aaa5.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_effc8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_effc8.dir\Debug\\" /Fd"cmTC_effc8.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+  cmTC_effc8.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_effc8.exe
+
+
+
+Performing C SOURCE FILE Test UV_LINT_W4 succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_6dda9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W4 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_W4 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6dda9.dir\Debug\\" /Fd"cmTC_6dda9.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_6dda9.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_6dda9.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_UNUSED_PARAMETER_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_629e3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_UNUSED_PARAMETER_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_629e3.dir\Debug\\" /Fd"cmTC_629e3.dir\Debug\vc141.pdb" /Gd /TC /wd4100 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_629e3.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_629e3.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_84bdc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_84bdc.dir\Debug\\" /Fd"cmTC_84bdc.dir\Debug\vc141.pdb" /Gd /TC /wd4127 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_84bdc.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_84bdc.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_NONSTANDARD_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_60499.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_NONSTANDARD_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_60499.dir\Debug\\" /Fd"cmTC_60499.dir\Debug\vc141.pdb" /Gd /TC /wd4201 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_60499.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_60499.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_99b11.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99b11.dir\Debug\\" /Fd"cmTC_99b11.dir\Debug\vc141.pdb" /Gd /TC /wd4206 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_99b11.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_99b11.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_583f9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_583f9.dir\Debug\\" /Fd"cmTC_583f9.dir\Debug\vc141.pdb" /Gd /TC /wd4210 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_583f9.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_583f9.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_47e5e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47e5e.dir\Debug\\" /Fd"cmTC_47e5e.dir\Debug\vc141.pdb" /Gd /TC /wd4232 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_47e5e.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_47e5e.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_HIDES_LOCAL succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_eefe9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_HIDES_LOCAL /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eefe9.dir\Debug\\" /Fd"cmTC_eefe9.dir\Debug\vc141.pdb" /Gd /TC /wd4456 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_eefe9.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_eefe9.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_HIDES_PARAM succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_2b578.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_HIDES_PARAM /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2b578.dir\Debug\\" /Fd"cmTC_2b578.dir\Debug\vc141.pdb" /Gd /TC /wd4457 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_2b578.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_2b578.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_HIDES_GLOBAL succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_80050.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_HIDES_GLOBAL /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_80050.dir\Debug\\" /Fd"cmTC_80050.dir\Debug\vc141.pdb" /Gd /TC /wd4459 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  
+  src.c
+  cmTC_80050.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_80050.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_65568.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_65568.dir\Debug\\" /Fd"cmTC_65568.dir\Debug\vc141.pdb" /Gd /TC /wd4706 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_65568.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_65568.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_NO_UNSAFE_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_ebfb0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_NO_UNSAFE_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ebfb0.dir\Debug\\" /Fd"cmTC_ebfb0.dir\Debug\vc141.pdb" /Gd /TC /wd4996 /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  
+  src.c
+  cmTC_ebfb0.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_ebfb0.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_WALL succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_dfb59.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /Wall /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_WALL /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dfb59.dir\Debug\\" /Fd"cmTC_dfb59.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_dfb59.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_dfb59.exe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test UV_LINT_UTF8_MSVC succeeded with the following output:
+Change Dir: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/CMakeTmp
+
+Run Build Command(s):e:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe cmTC_79cd2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27034 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D UV_LINT_UTF8_MSVC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79cd2.dir\Debug\\" /Fd"cmTC_79cd2.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue  /utf-8 "E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\src.c"
+  src.c
+  
+  cmTC_79cd2.vcxproj -> E:\training\TCCampDemo\Server\3rd\src\libuv-1.x\vsproject\CMakeFiles\CMakeTmp\Debug\cmTC_79cd2.exe
+
+
+Source file was:
+int main(void) { return 0; }
